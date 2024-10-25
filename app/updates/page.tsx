@@ -1,18 +1,11 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/mdx";
-import { formatDate, getBlogPosts } from "app/blog/utils";
+import { formatDate } from "app/blog/utils";
+import { getUpdatesPost } from "./utils";
 import { BASE_URL } from "app/assets/constants";
 
-export async function generateStaticParams() {
-  let posts = getBlogPosts();
-
-  return posts.map((post) => ({
-    slug: post.slug
-  }));
-}
-
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export function generateMetadata() {
+  let post = getUpdatesPost();
   if (!post) {
     return;
   }
@@ -51,8 +44,8 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default function Updates() {
+  let post = getUpdatesPost();
 
   if (!post) {
     notFound();
@@ -66,7 +59,7 @@ export default function Blog({ params }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BlogPosting",
+            "@type": "news",
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
