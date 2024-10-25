@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   icons: [
     { rel: "icon", url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
     { rel: "icon", url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-    { rel: "icon", url: "/favicon-48.png", sizes: "48x48", type: "image/png" }
+    { rel: "icon", url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+    { rel: "icon", url: "/favicon.ico", type: "icon" }
   ],
   description: DESC,
   openGraph: {
