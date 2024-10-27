@@ -70,14 +70,16 @@ export default function Page() {
             <Navbar />
             <div className="mx-auto">
               <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-                My Portfolio
+                {`Turtle Bites.`}
               </h1>
               <p className="mb-4">
-                {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-                Vim's keystroke commands and tabs' flexibility for personal viewing
-                preferences. This extends to my support for static typing, where its
-                early error detection ensures cleaner code, and my preference for dark
-                mode, which eases long coding sessions by reducing eye strain.`}
+                {`Find me here when my machine’s stuck looping :)`}
+              </p>
+              <p className="mb-4">
+                {`
+                  This is where I share my thoughts on linguistics, machines, and people, all with a dash of humor and the occasional turtle bites.
+                  Expect a mix of tech insights, personal stories, and reflections on the questions that keep me up at night.
+                `}
               </p>
               <div className="my-8">
                 <BlogPosts />

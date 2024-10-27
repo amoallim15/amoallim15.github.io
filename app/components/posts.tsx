@@ -3,7 +3,7 @@ import { formatDate, getBlogPosts } from "app/blog/utils";
 
 export function BlogPosts() {
   let allBlogs = getBlogPosts();
-
+  console.log(allBlogs);
   return (
     <div>
       {allBlogs
@@ -31,6 +31,9 @@ export function BlogPosts() {
             </div>
           </Link>
         ))}
+      {allBlogs && allBlogs.length === 0 && (
+        <small className="text-slate-600">No posts available yet.</small>
+      )}
     </div>
   );
 }
