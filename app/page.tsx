@@ -26,7 +26,7 @@ export default function Page() {
               <div>
                 <h3 className="mb-2 text-xl">Ali Moallim</h3>
                 <p>
-                  <span className="text-neutral-600 dark:text-neutral-400">
+                  <span className="text-neutral-600 dark:text-slate-400">
                     GitHub:{" "}
                   </span>
                   <span>
@@ -36,7 +36,7 @@ export default function Page() {
                   </span>
                 </p>
                 <p>
-                  <span className="text-neutral-600 dark:text-neutral-400">
+                  <span className="text-neutral-600 dark:text-slate-400">
                     Linkedin:{" "}
                   </span>
                   <span>
