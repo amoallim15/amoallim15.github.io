@@ -5,10 +5,9 @@ import { BASE_URL } from "app/assets/constants";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
-
-  return posts.map((post) => ({
-    slug: post.slug
-  }));
+  return posts.length > 0
+    ? posts.map((post) => ({ slug: post.slug }))
+    : [{ slug: "default" }];
 }
 
 export function generateMetadata({ params }) {
