@@ -48,6 +48,19 @@ export default function Page() {
                     </Link>
                   </span>
                 </p>
+                <p>
+                  <span className="text-neutral-600 dark:text-slate-400">
+                    Newletter:{" "}
+                  </span>
+                  <span>
+                    <Link
+                      href="https://amoallim.substack.com/"
+                      target="_blank"
+                    >
+                      amoallim
+                    </Link>
+                  </span>
+                </p>
                 <small className="text-blue-300">
                   <Link href="/cv.pdf" target="_blank">
                     Curriculum Vitae
