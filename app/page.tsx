@@ -50,7 +50,7 @@ export default function Page() {
                 </p>
                 <p>
                   <span className="text-neutral-600 dark:text-slate-400">
-                    Newletter:{" "}
+                    Newsletter:{" "}
                   </span>
                   <span>
                     <Link
